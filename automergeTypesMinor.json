@@ -1,0 +1,13 @@
+{
+  "packageRules": [
+    {
+      "packagePatterns": [
+        "^@types/"
+      ],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    }
+  ]
+}

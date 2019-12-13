@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "config:base",
+    ":masterIssue",
+    ":prConcurrentLimit10",
+    ":separateMultipleMajorReleases",
+    ":timezone(Asia/Tokyo)",
+    "github>hatena/renovate-config:automergePin",
+    "github>hatena/renovate-config:automergeTypesMinor",
+    "github>hatena/renovate-config:groupLinters"
+  ],
+  "ignorePresets": [
+    ":prConcurrentLimit20"
+  ],
+  "labels": [
+    "renovate"
+  ],
+  "postUpdateOptions": [
+    "yarnDedupeHighest",
+    "gomodTidy"
+  ],
+  "npm": {
+    "rangeStrategy": "bump"
+  }
+}

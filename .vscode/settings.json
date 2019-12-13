@@ -1,0 +1,14 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "./*.json"
+      ],
+      "url": "https://raw.githubusercontent.com/renovatebot/renovate/master/renovate-schema.json"
+    }
+  ],
+  "editor.formatOnSave": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}

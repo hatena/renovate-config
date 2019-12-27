@@ -3,8 +3,7 @@
     {
       "groupName": "linters",
       "extends": [
-        "packages:linters",
-        "monorepo:typescript-eslint"
+        "packages:linters"
       ],
       "packageNames": [
         "prettier"

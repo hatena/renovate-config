@@ -5,6 +5,7 @@
     ":prConcurrentLimit10",
     ":separateMultipleMajorReleases",
     ":timezone(Asia/Tokyo)",
+    "github>hatena/renovate-config:schedule",
     "github>hatena/renovate-config:automergePin",
     "github>hatena/renovate-config:automergeTypesMinor",
     "github>hatena/renovate-config:groupLinters"

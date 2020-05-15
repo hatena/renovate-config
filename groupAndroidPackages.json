@@ -123,9 +123,15 @@
       ]
     },
     {
-      "groupName": "RxJava",
+      "groupName": "RxJava 2",
       "packagePatterns": [
         "^io\\.reactivex\\.rxjava2:"
+      ]
+    },
+    {
+      "groupName": "RxJava 3",
+      "packagePatterns": [
+        "^io\\.reactivex\\.rxjava3:"
       ]
     },
     {

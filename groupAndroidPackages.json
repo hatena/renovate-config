@@ -1,0 +1,139 @@
+{
+  "packageRules": [
+    {
+      "groupName": "androidx.lifecycle",
+      "packagePatterns": [
+        "^androidx\\.lifecycle:"
+      ]
+    },
+    {
+      "groupName": "androidx.navigation",
+      "packagePatterns": [
+        "^androidx\\.navigation:"
+      ]
+    },
+    {
+      "groupName": "androidx.room",
+      "packagePatterns": [
+        "^androidx\\.room:"
+      ]
+    },
+    {
+      "groupName": "androidx.test",
+      "packagePatterns": [
+        "^androidx\\.test:",
+        "^androidx\\.test\\.ext:",
+        "^androidx\\.test\\.espresso:"
+      ]
+    },
+    {
+      "groupName": "AssistedInject",
+      "packagePatterns": [
+        "^com\\.squareup\\.inject:"
+      ]
+    },
+    {
+      "groupName": "Dagger",
+      "packagePatterns": [
+        "^com\\.google\\.dagger:dagger"
+      ]
+    },
+    {
+      "groupName": "Fabric and Crashlytics",
+      "packageNames": [
+        "io.fabric.tools:gradle",
+        "com.crashlytics.sdk.android:crashlytics"
+      ]
+    },
+    {
+      "groupName": "Firebase",
+      "packageNames": [
+        "com.google.android.gms:play-services-tagmanager"
+      ],
+      "packagePatterns": [
+        "^com\\.google\\.firebase:"
+      ]
+    },
+    {
+      "groupName": "Flipper",
+      "packagePatterns": [
+        "^com\\.facebook\\.flipper:",
+        "^com\\.facebook\\.soloader:soloader"
+      ],
+      "automerge": true
+    },
+    {
+      "groupName": "Glide",
+      "packagePatterns": [
+        "^com\\.github\\.bumptech\\.glide:"
+      ]
+    },
+    {
+      "groupName": "Groupie",
+      "packagePatterns": [
+        "^com\\.xwray:groupie"
+      ]
+    },
+    {
+      "groupName": "Hyperion",
+      "packagePatterns": [
+        "^com\\.willowtreeapps\\.hyperion:"
+      ]
+    },
+    {
+      "groupName": "Kotlin",
+      "packagePatterns": [
+        "^org\\.jetbrains\\.kotlin:"
+      ]
+    },
+    {
+      "groupName": "kotlinx.coroutines",
+      "packagePatterns": [
+        "^org\\.jetbrains\\.kotlinx:kotlinx-coroutines"
+      ]
+    },
+    {
+      "groupName": "MockK",
+      "packagePatterns": [
+        "^io\\.mockk:mockk"
+      ]
+    },
+    {
+      "groupName": "OkHttp",
+      "packagePatterns": [
+        "^com\\.squareup\\.okhttp3:"
+      ]
+    },
+    {
+      "groupName": "Play Services",
+      "packagePatterns": [
+        "^com\\.google\\.android\\.gms:play-services-"
+      ]
+    },
+    {
+      "groupName": "Realm",
+      "packagePatterns": [
+        "^io\\.realm:realm"
+      ]
+    },
+    {
+      "groupName": "Retrofit",
+      "packagePatterns": [
+        "^com\\.squareup\\.retrofit2:"
+      ]
+    },
+    {
+      "groupName": "RxJava",
+      "packagePatterns": [
+        "^io\\.reactivex\\.rxjava2:"
+      ]
+    },
+    {
+      "groupName": "ThreeTenABP",
+      "packageNames": [
+        "org.threeten:threetenbp",
+        "com.jakewharton.threetenabp:threetenabp"
+      ]
+    }
+  ]
+}

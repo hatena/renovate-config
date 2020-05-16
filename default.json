@@ -8,7 +8,8 @@
     "github>hatena/renovate-config:schedule",
     "github>hatena/renovate-config:automergePin",
     "github>hatena/renovate-config:automergeTypesMinor",
-    "github>hatena/renovate-config:groupLinters"
+    "github>hatena/renovate-config:groupLinters",
+    "github>hatena/renovate-config:groupAndroidPackages"
   ],
   "ignorePresets": [
     ":prConcurrentLimit20"

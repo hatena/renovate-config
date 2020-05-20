@@ -1,0 +1,17 @@
+{
+  "packageRules": [
+    {
+      "groupName": "RxSwift",
+      "datasources": [
+        "pod"
+      ],
+      "packageNames": [
+        "RxSwift",
+        "RxRelay",
+        "RxCocoa",
+        "RxBlocking",
+        "RxTest"
+      ]
+    }
+  ]
+}

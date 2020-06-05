@@ -22,6 +22,11 @@
     "yarnDedupeHighest",
     "gomodTidy"
   ],
+  "dockerfile": {
+    "fileMatch": [
+      "(^|/)Dockerfile-[^/]*$"
+    ]
+  },
   "npm": {
     "rangeStrategy": "bump"
   }

@@ -10,6 +10,7 @@
     "github>hatena/renovate-config:automergeTypesMinor",
     "github>hatena/renovate-config:groupAndroidPackages",
     "github>hatena/renovate-config:groupCocoaPodsPackages",
+    "github>hatena/renovate-config:groupJest",
     "github>hatena/renovate-config:groupLinters"
   ],
   "ignorePresets": [

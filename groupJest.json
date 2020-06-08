@@ -1,0 +1,11 @@
+{
+  "packageRules": [
+    {
+      "groupName": "jest",
+      "sourceUrlPrefixes": [
+        "https://github.com/facebook/jest",
+        "https://github.com/kulshekhar/ts-jest"
+      ]
+    }
+  ]
+}

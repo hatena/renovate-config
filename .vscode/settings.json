@@ -2,9 +2,9 @@
   "json.schemas": [
     {
       "fileMatch": [
-        "./*.json"
+        "/*.json"
       ],
-      "url": "https://raw.githubusercontent.com/renovatebot/renovate/master/renovate-schema.json"
+      "url": "https://docs.renovatebot.com/renovate-schema.json"
     }
   ],
   "editor.formatOnSave": true,

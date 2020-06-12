@@ -9,3 +9,105 @@ A [shareable config preset for Renovate](https://docs.renovatebot.com/config-pre
   ]
 }
 ```
+
+## Available presets
+
+### autoMergePin
+
+```json
+{
+  "pin": {
+    "automerge": true
+  }
+}
+```
+
+### autoMergeTypesMinor
+
+```json
+{
+  "packageRules": [
+    {
+      "packagePatterns": ["^@types/"],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    }
+  ]
+}
+```
+
+### groupAndroidPackages
+
+Grouping various libraries used for Android app development, mainly based on Maven groupId.
+
+### groupCocoaPodsPackages
+
+Grouping some CocoaPods libraries used for iOS app development.
+
+### groupJest
+
+Grouping jest monorepo packages and ts-jest.
+
+```json
+{
+  "packageRules": [
+    {
+      "groupName": "jest",
+      "sourceUrlPrefixes": [
+        "https://github.com/facebook/jest",
+        "https://github.com/kulshekhar/ts-jest"
+      ]
+    }
+  ]
+}
+```
+
+### groupLinters
+
+Grouping lint-related packages for JavaScript and TypeScript. Adding prettier and typescript-eslint packages to the [`packages:linters` preset](https://docs.renovatebot.com/presets-packages/#packageslinters).
+
+```json
+{
+  "packageRules": [
+    {
+      "groupName": "linters",
+      "extends": ["packages:linters"],
+      "packageNames": ["prettier"],
+      "packagePatterns": ["^@typescript-eslint/"]
+    }
+  ]
+}
+```
+
+### schedule
+
+```json
+{
+  "extends": [
+    ":timezone(Asia/Tokyo)"
+  ],
+  "schedule": [
+    "after 10:30 before 18:00 every weekday except after 13:00 before 14:00"
+  ]
+}
+```
+
+This config is heavily based on our business hours in Hatena. So if this is not a good fit for you, please exclude as follows:
+
+```json
+{
+  "ignorePresets": ["github>hatena/renovate-config:schedule"]
+}
+```
+
+or overwrite the [`schedule` option](https://docs.renovatebot.com/configuration-options/#schedule) as you like:
+
+```json
+{
+  "schedule": ["after 10pm and before 5am on every weekday", "every weekend"]
+}
+```
+
+or extend the [Schedule Presets](https://docs.renovatebot.com/presets-schedule/).

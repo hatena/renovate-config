@@ -99,6 +99,12 @@
       ]
     },
     {
+      "groupName": "Moshi",
+      "packagePatterns": [
+        "^com\\.squareup\\.moshi:"
+      ]
+    },
+    {
       "groupName": "OkHttp",
       "packagePatterns": [
         "^com\\.squareup\\.okhttp3:"

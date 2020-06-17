@@ -1,6 +1,18 @@
 {
   "packageRules": [
     {
+      "groupName": "ReactiveCocoa",
+      "datasources": [
+        "pod"
+      ],
+      "packageNames": [
+        "ReactiveSwift",
+        "ReactiveCocoa",
+        "ReactiveObjC",
+        "ReactiveObjCBridge"
+      ]
+    },
+    {
       "groupName": "RxSwift",
       "datasources": [
         "pod"

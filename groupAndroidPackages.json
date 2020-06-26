@@ -33,9 +33,27 @@
       ]
     },
     {
+      "groupName": "AutoDispose",
+      "packagePatterns": [
+        "^com\\.uber\\.autodispose:autodispose"
+      ]
+    },
+    {
       "groupName": "Dagger",
       "packagePatterns": [
         "^com\\.google\\.dagger:dagger"
+      ]
+    },
+    {
+      "groupName": "Dart and Henson",
+      "packagePatterns": [
+        "^com\\.f2prateek\\.dart:"
+      ]
+    },
+    {
+      "groupName": "Epoxy",
+      "packagePatterns": [
+        "^com\\.airbnb\\.android:epoxy"
       ]
     },
     {
@@ -93,6 +111,12 @@
       ]
     },
     {
+      "groupName": "LeakCanary",
+      "packagePatterns": [
+        "^com\\.squareup\\.leakcanary:"
+      ]
+    },
+    {
       "groupName": "MockK",
       "packagePatterns": [
         "^io\\.mockk:mockk"
@@ -108,6 +132,12 @@
       "groupName": "OkHttp",
       "packagePatterns": [
         "^com\\.squareup\\.okhttp3:"
+      ]
+    },
+    {
+      "groupName": "PaperParcel",
+      "packagePatterns": [
+        "^nz\\.bradcampbell:paperparcel"
       ]
     },
     {

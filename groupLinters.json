@@ -7,9 +7,6 @@
       ],
       "packageNames": [
         "prettier"
-      ],
-      "packagePatterns": [
-        "^@typescript-eslint/"
       ]
     }
   ]

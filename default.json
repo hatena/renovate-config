@@ -1,7 +1,7 @@
 {
   "extends": [
     "config:base",
-    ":masterIssue",
+    ":dependencyDashboard",
     ":prConcurrentLimit10",
     ":separateMultipleMajorReleases",
     ":timezone(Asia/Tokyo)",

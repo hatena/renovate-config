@@ -1,0 +1,11 @@
+{
+  "packageRules": [
+    {
+      "groupName": "GitHub Actions",
+      "paths": [
+        ".github/workflows/*.yml",
+        ".github/workflows/*.yaml"
+      ]
+    }
+  ]
+}

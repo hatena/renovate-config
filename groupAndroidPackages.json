@@ -101,13 +101,13 @@
     {
       "groupName": "Jetpack Compose",
       "packagePatterns": [
-        "^androidx.\\.compose:",
-        "^androidx.\\.compose\\.animation:",
-        "^androidx.\\.compose\\:compiler",
-        "^androidx.\\.compose\\.foundation:",
-        "^androidx.\\.compose\\.material:",
-        "^androidx.\\.compose\\.runtime:",
-        "^androidx.\\.compose\\.ui:"
+        "^androidx\\.compose:",
+        "^androidx\\.compose\\.animation:",
+        "^androidx\\.compose\\:compiler:",
+        "^androidx\\.compose\\.foundation:",
+        "^androidx\\.compose\\.material:",
+        "^androidx\\.compose\\.runtime:",
+        "^androidx\\.compose\\.ui:"
       ]
     },
     {

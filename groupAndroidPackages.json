@@ -1,6 +1,12 @@
 {
   "packageRules": [
     {
+      "groupName": "androidx.activity",
+      "packagePatterns": [
+        "^androidx\\.activity:"
+      ]
+    },
+    {
       "groupName": "androidx.lifecycle",
       "packagePatterns": [
         "^androidx\\.lifecycle:"

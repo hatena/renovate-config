@@ -2,10 +2,10 @@
   "packageRules": [
     {
       "groupName": "ReactiveCocoa",
-      "datasources": [
+      "matchDatasources": [
         "pod"
       ],
-      "packageNames": [
+      "matchPackageNames": [
         "ReactiveSwift",
         "ReactiveCocoa",
         "ReactiveObjC",
@@ -14,10 +14,10 @@
     },
     {
       "groupName": "RxSwift",
-      "datasources": [
+      "matchDatasources": [
         "pod"
       ],
-      "packageNames": [
+      "matchPackageNames": [
         "RxSwift",
         "RxRelay",
         "RxCocoa",

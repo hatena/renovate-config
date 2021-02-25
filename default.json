@@ -34,7 +34,7 @@
   "packageRules": [
     {
       "groupName": "boto3",
-      "packageNames": [
+      "matchPackageNames": [
         "boto3",
         "botocore"
       ]

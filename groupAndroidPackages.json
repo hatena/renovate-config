@@ -1,6 +1,12 @@
 {
   "packageRules": [
     {
+      "groupName": "Accompanist",
+      "matchPackagePatterns": [
+        "^dev\\.chrisbanes\\.accompanist:"
+      ]
+    },
+    {
       "groupName": "androidx.activity",
       "matchPackagePatterns": [
         "^androidx\\.activity:"

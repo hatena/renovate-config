@@ -27,6 +27,12 @@
       ]
     },
     {
+      "groupName": "Apollo Android",
+      "packagePatterns": [
+        "^com\\.apollographql\\.apollo:"
+      ]
+    },
+    {
       "groupName": "AssistedInject",
       "packagePatterns": [
         "^com\\.squareup\\.inject:"

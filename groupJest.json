@@ -2,7 +2,7 @@
   "packageRules": [
     {
       "groupName": "jest",
-      "sourceUrlPrefixes": [
+      "matchSourceUrlPrefixes": [
         "https://github.com/facebook/jest",
         "https://github.com/kulshekhar/ts-jest"
       ]

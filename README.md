@@ -28,7 +28,7 @@ A [shareable config preset for Renovate](https://docs.renovatebot.com/config-pre
 {
   "packageRules": [
     {
-      "packagePatterns": ["^@types/"],
+      "matchPackagePatterns": ["^@types/"],
       "automerge": true,
       "major": {
         "automerge": false
@@ -55,7 +55,7 @@ Grouping jest monorepo packages and ts-jest.
   "packageRules": [
     {
       "groupName": "jest",
-      "sourceUrlPrefixes": [
+      "matchSourceUrlPrefixes": [
         "https://github.com/facebook/jest",
         "https://github.com/kulshekhar/ts-jest"
       ]
@@ -74,8 +74,8 @@ Grouping lint-related packages for JavaScript and TypeScript. Adding prettier an
     {
       "groupName": "linters",
       "extends": ["packages:linters"],
-      "packageNames": ["prettier"],
-      "packagePatterns": ["^@typescript-eslint/"]
+      "matchPackageNames": ["prettier"],
+      "matchPackagePatterns": ["^@typescript-eslint/"]
     }
   ]
 }

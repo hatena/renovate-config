@@ -2,31 +2,31 @@
   "packageRules": [
     {
       "groupName": "androidx.activity",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^androidx\\.activity:"
       ]
     },
     {
       "groupName": "androidx.lifecycle",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^androidx\\.lifecycle:"
       ]
     },
     {
       "groupName": "androidx.navigation",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^androidx\\.navigation:"
       ]
     },
     {
       "groupName": "androidx.room",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^androidx\\.room:"
       ]
     },
     {
       "groupName": "androidx.test",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^androidx\\.test:",
         "^androidx\\.test\\.ext:",
         "^androidx\\.test\\.espresso:"
@@ -34,59 +34,59 @@
     },
     {
       "groupName": "Apollo Android",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.apollographql\\.apollo:"
       ]
     },
     {
       "groupName": "AssistedInject",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.squareup\\.inject:"
       ]
     },
     {
       "groupName": "AutoDispose",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.uber\\.autodispose:autodispose"
       ]
     },
     {
       "groupName": "Dagger",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.google\\.dagger:dagger"
       ]
     },
     {
       "groupName": "Dart and Henson",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.f2prateek\\.dart:"
       ]
     },
     {
       "groupName": "Epoxy",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.airbnb\\.android:epoxy"
       ]
     },
     {
       "groupName": "Fabric and Crashlytics",
-      "packageNames": [
+      "matchPackageNames": [
         "io.fabric.tools:gradle",
         "com.crashlytics.sdk.android:crashlytics"
       ]
     },
     {
       "groupName": "Firebase",
-      "packageNames": [
+      "matchPackageNames": [
         "com.google.android.gms:play-services-tagmanager"
       ],
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.google\\.firebase:"
       ]
     },
     {
       "groupName": "Flipper",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.facebook\\.flipper:",
         "^com\\.facebook\\.soloader:soloader"
       ],
@@ -94,25 +94,25 @@
     },
     {
       "groupName": "Glide",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.github\\.bumptech\\.glide:"
       ]
     },
     {
       "groupName": "Groupie",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.xwray:groupie"
       ]
     },
     {
       "groupName": "Hyperion",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.willowtreeapps\\.hyperion:"
       ]
     },
     {
       "groupName": "Jetpack Compose",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^androidx\\.compose:",
         "^androidx\\.compose\\.animation:",
         "^androidx\\.compose\\.compiler:",
@@ -124,79 +124,79 @@
     },
     {
       "groupName": "Kotlin",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^org\\.jetbrains\\.kotlin:"
       ]
     },
     {
       "groupName": "kotlinx.coroutines",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^org\\.jetbrains\\.kotlinx:kotlinx-coroutines"
       ]
     },
     {
       "groupName": "LeakCanary",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.squareup\\.leakcanary:"
       ]
     },
     {
       "groupName": "MockK",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^io\\.mockk:mockk"
       ]
     },
     {
       "groupName": "Moshi",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.squareup\\.moshi:"
       ]
     },
     {
       "groupName": "OkHttp",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.squareup\\.okhttp3:"
       ]
     },
     {
       "groupName": "PaperParcel",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^nz\\.bradcampbell:paperparcel"
       ]
     },
     {
       "groupName": "Play Services",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.google\\.android\\.gms:play-services-"
       ]
     },
     {
       "groupName": "Realm",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^io\\.realm:realm"
       ]
     },
     {
       "groupName": "Retrofit",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^com\\.squareup\\.retrofit2:"
       ]
     },
     {
       "groupName": "RxJava 2",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^io\\.reactivex\\.rxjava2:"
       ]
     },
     {
       "groupName": "RxJava 3",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^io\\.reactivex\\.rxjava3:"
       ]
     },
     {
       "groupName": "ThreeTenABP",
-      "packageNames": [
+      "matchPackageNames": [
         "org.threeten:threetenbp",
         "com.jakewharton.threetenabp:threetenabp"
       ]

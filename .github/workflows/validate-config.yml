@@ -32,7 +32,5 @@ jobs:
         for file in *.json
         do
           echo "[CI] Let's validate $file"
-          cp $file renovate.json
-          npx --package renovate -c 'renovate-config-validator'
-          rm renovate.json
+          RENOVATE_CONFIG_FILE=${file} npx --package renovate -c 'renovate-config-validator'
         done

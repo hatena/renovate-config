@@ -177,6 +177,13 @@
       ]
     },
     {
+      "groupName": "Protobuf",
+      "matchPackageNames": [
+        "com.google.protobuf:protobuf-javalite",
+        "com.google.protobuf:protoc"
+      ]
+    },
+    {
       "groupName": "Realm",
       "matchPackagePatterns": [
         "^io\\.realm:realm"

@@ -57,9 +57,9 @@
       ]
     },
     {
-      "groupName": "Dagger",
+      "groupName": "Dagger and Hilt",
       "matchPackagePatterns": [
-        "^com\\.google\\.dagger:dagger"
+        "^com\\.google\\.dagger:"
       ]
     },
     {

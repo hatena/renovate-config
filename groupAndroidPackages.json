@@ -82,7 +82,7 @@
       ]
     },
     {
-      "groupName": "Firebase",
+      "groupName": "Firebase Android",
       "matchPackageNames": [
         "com.google.android.gms:play-services-tagmanager"
       ],

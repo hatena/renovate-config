@@ -208,6 +208,12 @@
       ]
     },
     {
+      "groupName": "Spek",
+      "matchPackagePatterns": [
+        "^org\\.spekframework\\.spek2:"
+      ]
+    },
+    {
       "groupName": "ThreeTenABP",
       "matchPackageNames": [
         "org.threeten:threetenbp",

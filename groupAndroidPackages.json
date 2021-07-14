@@ -57,6 +57,12 @@
       ]
     },
     {
+      "groupName": "Coil",
+      "matchPackagePatterns": [
+        "^io\\.coil-kt:"
+      ]
+    },
+    {
       "groupName": "Dagger and Hilt",
       "matchPackagePatterns": [
         "^com\\.google\\.dagger:"

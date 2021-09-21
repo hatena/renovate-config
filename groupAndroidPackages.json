@@ -7,6 +7,13 @@
       ]
     },
     {
+      "groupName": "android-junit5",
+      "matchPackagePatterns": [
+        "^de\\.mannodermaus\\.gradle\\.plugins:android-junit5",
+        "^de\\.mannodermaus\\.junit5:"
+      ]
+    },
+    {
       "groupName": "androidx.activity",
       "matchPackagePatterns": [
         "^androidx\\.activity:"

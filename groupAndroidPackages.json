@@ -46,6 +46,12 @@
       ]
     },
     {
+      "groupName": "androidx.work",
+      "matchPackagePatterns": [
+        "^androidx\\.work:"
+      ]
+    },
+    {
       "groupName": "Apollo Android",
       "matchPackagePatterns": [
         "^com\\.apollographql\\.apollo:",

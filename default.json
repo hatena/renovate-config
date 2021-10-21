@@ -11,17 +11,14 @@
     "github>hatena/renovate-config:groupAndroidPackages",
     "github>hatena/renovate-config:groupCocoaPodsPackages",
     "github>hatena/renovate-config:groupJest",
-    "github>hatena/renovate-config:groupLinters"
+    "github>hatena/renovate-config:groupLinters",
+    "github>hatena/renovate-config:postUpdateOptions"
   ],
   "ignorePresets": [
     ":prConcurrentLimit20"
   ],
   "labels": [
     "renovate"
-  ],
-  "postUpdateOptions": [
-    "yarnDedupeHighest",
-    "gomodTidy"
   ],
   "dockerfile": {
     "fileMatch": [
@@ -41,3 +38,4 @@
     }
   ]
 }
+

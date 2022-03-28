@@ -148,6 +148,13 @@
       ]
     },
     {
+      "groupName": "Kotest",
+      "matchPackagePatterns": [
+        "^io\\.kotest:",
+        "^io\\.kotest\\.extensions:"
+      ]
+    },
+    {
       "groupName": "Kotlin",
       "matchPackagePatterns": [
         "^org\\.jetbrains\\.kotlin:"

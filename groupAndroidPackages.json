@@ -150,7 +150,8 @@
     {
       "groupName": "Kotest",
       "matchPackagePatterns": [
-        "^io\\.kotest:"
+        "^io\\.kotest:",
+        "^io\\.kotest\\.extensions:"
       ]
     },
     {

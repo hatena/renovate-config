@@ -126,7 +126,7 @@
     {
       "groupName": "Groupie",
       "matchPackagePatterns": [
-        "^com\\.xwray:groupie"
+        "^com\\.github\\.lisawray\\.groupie:"
       ]
     },
     {

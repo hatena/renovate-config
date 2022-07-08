@@ -32,7 +32,7 @@
     },
     {
       matchDatasources: ["repology"],
-      matchPackagePrefixes: ["HTTP-Message/"],
+      matchPackagePatterns: ["^HTTP::Message$", "^HTTP-Message/"],
       groupName: "HTTP-Message",
     },
     {

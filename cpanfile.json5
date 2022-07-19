@@ -16,7 +16,7 @@
       datasourceTemplate: "repology",
       depNameTemplate: "{{#if distribution}}{{{distribution}}}/{{{_depName}}}{{else}}{{{_depName}}}{{/if}}",
       packageNameTemplate: "{{#if repository}}{{{repository}}}{{else}}metacpan{{/if}}/perl:{{#if distribution}}{{{lowercase distribution}}}{{else}}{{{lowercase (replace '(::|_)' '-' _depName)}}}{{/if}}",
-      versioningTemplate: "loose",
+      versioningTemplate: "perl",
       extractVersionTemplate: "^v?(?<version>.*)$",
     },
   ],

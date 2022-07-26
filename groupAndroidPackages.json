@@ -108,7 +108,10 @@
       ],
       "matchPackagePatterns": [
         "^com\\.google\\.firebase:"
-      ]
+      ],
+      "prBodyDefinitions": {
+        "Package": "{{{depName}}} ([changelog](https://firebase.google.com/support/release-notes/android))"
+      }
     },
     {
       "groupName": "Flipper",

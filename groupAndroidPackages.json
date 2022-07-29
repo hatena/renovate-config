@@ -17,24 +17,36 @@
       "groupName": "androidx.activity",
       "matchPackagePatterns": [
         "^androidx\\.activity:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/activity#{{{newVersion}}}"
       ]
     },
     {
       "groupName": "androidx.lifecycle",
       "matchPackagePatterns": [
         "^androidx\\.lifecycle:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/lifecycle#{{{newVersion}}}"
       ]
     },
     {
       "groupName": "androidx.navigation",
       "matchPackagePatterns": [
         "^androidx\\.navigation:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/navigation#{{{newVersion}}}"
       ]
     },
     {
       "groupName": "androidx.room",
       "matchPackagePatterns": [
         "^androidx\\.room:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/room#{{{newVersion}}}"
       ]
     },
     {
@@ -43,12 +55,18 @@
         "^androidx\\.test:",
         "^androidx\\.test\\.ext:",
         "^androidx\\.test\\.espresso:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/test#{{{newVersion}}}"
       ]
     },
     {
       "groupName": "androidx.work",
       "matchPackagePatterns": [
         "^androidx\\.work:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/work#{{{newVersion}}}"
       ]
     },
     {
@@ -109,9 +127,9 @@
       "matchPackagePatterns": [
         "^com\\.google\\.firebase:"
       ],
-      "prBodyDefinitions": {
-        "Package": "{{{depName}}} ([changelog](https://firebase.google.com/support/release-notes/android))"
-      }
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://firebase.google.com/support/release-notes/android#bom_v{{{replace '.' '-' newVersion}}}"
+      ]
     },
     {
       "groupName": "Flipper",

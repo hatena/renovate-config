@@ -23,6 +23,51 @@
       ]
     },
     {
+      "groupName": "androidx.appcompat",
+      "matchPackagePatterns": [
+        "^androidx\\.appcompat:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/appcompat#{{{newVersion}}}"
+      ]
+    },
+    {
+      "groupName": "androidx.cardview",
+      "matchPackagePatterns": [
+        "^androidx\\.cardview:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/cardview#{{{newVersion}}}"
+      ]
+    },
+    {
+      "groupName": "androidx.core",
+      "matchPackagePatterns": [
+        "^androidx\\.core:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/core#{{{newVersion}}}"
+      ]
+    },
+    {
+      "groupName": "androidx.constraintlayout",
+      "matchPackagePatterns": [
+        "^androidx\\.constraintlayout:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/constraintlayout#{{{newVersion}}}"
+      ]
+    },
+    {
+      "groupName": "androidx.fragment",
+      "matchPackagePatterns": [
+        "^androidx\\.fragment:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/fragment#{{{newVersion}}}"
+      ]
+    },
+    {
       "groupName": "androidx.lifecycle",
       "matchPackagePatterns": [
         "^androidx\\.lifecycle:"
@@ -41,12 +86,39 @@
       ]
     },
     {
+      "groupName": "androidx.preference",
+      "matchPackagePatterns": [
+        "^androidx\\.preference:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/preference#{{{newVersion}}}"
+      ]
+    },
+    {
+      "groupName": "androidx.recyclerview",
+      "matchPackagePatterns": [
+        "^androidx\\.recyclerview:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/recyclerview#{{{newVersion}}}"
+      ]
+    },
+    {
       "groupName": "androidx.room",
       "matchPackagePatterns": [
         "^androidx\\.room:"
       ],
       "prBodyNotes": [
         "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/room#{{{newVersion}}}"
+      ]
+    },
+    {
+      "groupName": "androidx.swiperefreshlayout",
+      "matchPackagePatterns": [
+        "^androidx\\.swiperefreshlayout:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/swiperefreshlayout#{{{newVersion}}}"
       ]
     },
     {
@@ -58,6 +130,15 @@
       ],
       "prBodyNotes": [
         "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/test#{{{newVersion}}}"
+      ]
+    },
+    {
+      "groupName": "androidx.viewpager2",
+      "matchPackagePatterns": [
+        "^androidx\\.viewpager2:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/viewpager2#{{{newVersion}}}"
       ]
     },
     {

@@ -128,7 +128,7 @@
         "^com\\.google\\.firebase:"
       ],
       "prBodyNotes": [
-        "### Release Notes\n\nhttps://firebase.google.com/support/release-notes/android#bom_v{{{replace '.' '-' newVersion}}}"
+        "### Release Notes\n\nhttps://firebase.google.com/support/release-notes/android#bom_v{{{replace '\.' '-' newVersion}}}"
       ]
     },
     {

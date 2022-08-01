@@ -1,63 +1,50 @@
 {
-  ignoreDeps: [
-    "DBI::DBD",
-    "IPC::Open3",
-    "Net::DNS::Nameserver",
-    "Statistics::PointEstimation",
-    "Text::LineFold",
-    "Unicode::GCString",
-  ],
   regexManagers: [
     {
       fileMatch: ["(^|/)cpanfile$"],
       matchStrings: [
-        "(# renovate-repology:( repository=(?<repository>.*?))?( distribution=(?<distribution>.*?))?)?\\s*(requires|suggests)\\s*'(?<_depName>.*?)',\\s*'(>|>=|==)?\\s*v?(?<currentValue>.*)';",
+        "(requires|suggests)\\s*'(?<depName>.*?)',\\s*'(==|>=|>)?\\s*v?(?<currentValue>.*)';",
       ],
-      datasourceTemplate: "repology",
-      depNameTemplate: "{{#if distribution}}{{{distribution}}}/{{{_depName}}}{{else}}{{{_depName}}}{{/if}}",
-      packageNameTemplate: "{{#if repository}}{{{repository}}}{{else}}metacpan{{/if}}/perl:{{#if distribution}}{{{lowercase distribution}}}{{else}}{{{lowercase (replace '(::|_)' '-' _depName)}}}{{/if}}",
+      datasourceTemplate: "cpan",
       versioningTemplate: "perl",
       extractVersionTemplate: "^v?(?<version>.*)$",
     },
   ],
   packageRules: [
     {
-      matchDatasources: ["repology"],
-      // https://docs.renovatebot.com/configuration-options/#prbodydefinitions
-      prBodyDefinitions: {
-        Package: "[{{{replace '.+\\/' '' depName}}}](https://metacpan.org/pod/{{{replace '.+\\/' '' depName}}}) ([Changes](https://metacpan.org/dist/{{{replace '::' '-' (replace '\\/.+' '' depName)}}}/changes))",
-      },
-      // https://docs.renovatebot.com/configuration-options/#commitmessagetopic
-      commitMessageTopic: "dependency {{{replace '.+\\/' '' depName}}}",
-    },
-    {
-      matchDatasources: ["repology"],
-      matchPackagePatterns: ["^HTTP::Message$", "^HTTP-Message/"],
+      matchDatasources: ["cpan"],
+      matchPackageNames: [
+        "HTTP::Message",
+        "HTTP::Request",
+        "HTTP::Request::Common",
+        "HTTP::Response",
+        "HTTP::Status",
+      ],
       groupName: "HTTP-Message",
     },
     {
-      matchDatasources: ["repology"],
-      matchPackagePrefixes: ["IO/"],
+      matchDatasources: ["cpan"],
+      matchPackageNames: ["IO::Select", "IO::Socket::INET"],
       groupName: "IO",
     },
     {
-      matchDatasources: ["repology"],
-      matchPackagePrefixes: ["IO-Compress/"],
+      matchDatasources: ["cpan"],
+      matchPackageNames: ["IO::Compress::Gzip", "IO::Uncompress::Gunzip"],
       groupName: "IO-Compress",
     },
     {
-      matchDatasources: ["repology"],
-      matchPackagePrefixes: ["Test-Simple/"],
+      matchDatasources: ["cpan"],
+      matchPackageNames: ["Test::More", "Test2", "Test2::API"],
       groupName: "Test-Simple",
     },
     {
-      matchDatasources: ["repology"],
-      matchPackagePrefixes: ["Test2-Suite/"],
+      matchDatasources: ["cpan"],
+      matchPackageNames: ["Test2::Plugin::UTF8", "Test2::Suite", "Test2::V0"],
       groupName: "Test2-Suite",
     },
     {
-      matchDatasources: ["repology"],
-      matchPackagePatterns: ["^URI(/|$)"],
+      matchDatasources: ["cpan"],
+      matchPackageNames: ["URI", "URI::Escape", "URI::QueryParam"],
       groupName: "URI",
     },
   ],

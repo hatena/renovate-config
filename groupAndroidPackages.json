@@ -347,6 +347,13 @@
         "org.threeten:threetenbp",
         "com.jakewharton.threetenabp:threetenabp"
       ]
+    },
+    {
+      "groupName": "KotlinPoet",
+      "matchPackageNames": [
+        "com.squareup:kotlinpoet:",
+        "com.squareup:kotlinpoet-ksp:"
+      ]
     }
   ]
 }

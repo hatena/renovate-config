@@ -1,4 +1,5 @@
 {
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
   regexManagers: [
     {
       fileMatch: ["(^|/)cpanfile$"],
@@ -46,6 +47,12 @@
       matchDatasources: ["cpan"],
       matchPackageNames: ["URI", "URI::Escape", "URI::QueryParam"],
       groupName: "URI",
+    },
+    {
+      matchDatasources: ["cpan"],
+      matchPackageNames: ["XML::Liberal"],
+      // https://docs.renovatebot.com/configuration-options/#allowedversions
+      allowedVersions: "!/^1\\.0\\.0$/",
     },
   ],
 }

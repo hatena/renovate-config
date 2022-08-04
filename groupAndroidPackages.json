@@ -351,8 +351,8 @@
     {
       "groupName": "KotlinPoet",
       "matchPackageNames": [
-        "com.squareup:kotlinpoet:",
-        "com.squareup:kotlinpoet-ksp:"
+        "com.squareup:kotlinpoet",
+        "com.squareup:kotlinpoet-ksp"
       ]
     }
   ]

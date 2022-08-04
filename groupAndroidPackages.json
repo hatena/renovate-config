@@ -263,6 +263,13 @@
       ]
     },
     {
+      "groupName": "KotlinPoet",
+      "matchPackageNames": [
+        "com.squareup:kotlinpoet",
+        "com.squareup:kotlinpoet-ksp"
+      ]
+    },
+    {
       "groupName": "kotlinx.coroutines",
       "matchPackagePatterns": [
         "^org\\.jetbrains\\.kotlinx:kotlinx-coroutines"
@@ -346,13 +353,6 @@
       "matchPackageNames": [
         "org.threeten:threetenbp",
         "com.jakewharton.threetenabp:threetenabp"
-      ]
-    },
-    {
-      "groupName": "KotlinPoet",
-      "matchPackageNames": [
-        "com.squareup:kotlinpoet",
-        "com.squareup:kotlinpoet-ksp"
       ]
     }
   ]

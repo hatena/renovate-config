@@ -179,6 +179,9 @@
       "groupName": "Dagger and Hilt",
       "matchPackagePatterns": [
         "^com\\.google\\.dagger:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://github.com/google/dagger/releases/tag/dagger-{{{newVersion}}}"
       ]
     },
     {

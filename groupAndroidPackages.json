@@ -214,7 +214,8 @@
       "prBodyNotes": [
         "### Release Notes\n\nhttps://firebase.google.com/support/release-notes/android#bom_v{{{replace '\\.' '-' newVersion}}}"
       ],
-      "stabilityDays": 3
+      "stabilityDays": 3,
+      "internalChecksFilter": "strict"
     },
     {
       "groupName": "Flipper",

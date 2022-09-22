@@ -50,6 +50,15 @@
       ]
     },
     {
+      "groupName": "androidx.compose.material3",
+      "matchPackagePatterns": [
+        "^androidx\\.compose\\.material3:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/compose-material3#{{{newVersion}}}"
+      ]
+    },
+    {
       "groupName": "androidx.constraintlayout",
       "matchPackagePatterns": [
         "^androidx\\.constraintlayout:"

@@ -256,7 +256,6 @@
       "matchPackagePatterns": [
         "^androidx\\.compose:",
         "^androidx\\.compose\\.animation:",
-        "^androidx\\.compose\\.compiler:",
         "^androidx\\.compose\\.foundation:",
         "^androidx\\.compose\\.material:",
         "^androidx\\.compose\\.runtime:",

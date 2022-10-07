@@ -289,6 +289,12 @@
       ]
     },
     {
+      "groupName": "KSP",
+      "matchPackagePatterns": [
+        "^com\\.google\\.devtools\\.ksp:"
+      ]
+    },
+    {
       "groupName": "LeakCanary",
       "matchPackagePatterns": [
         "^com\\.squareup\\.leakcanary:"

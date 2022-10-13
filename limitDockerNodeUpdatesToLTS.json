@@ -5,7 +5,7 @@
         "^*Dockerfile$"
       ],
       "matchStrings": [
-        "FROM node:(?<currentValue>.*?)-.*\\n"
+        "FROM node:(?<currentValue>[0-9.]+?)[^0-9.]*\\n"
       ],
       "depNameTemplate": "node",
       "datasourceTemplate": "node",

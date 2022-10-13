@@ -1,0 +1,26 @@
+{
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "^*Dockerfile$"
+      ],
+      "matchStrings": [
+        "FROM node:(?<currentValue>.*?)-.*\\n"
+      ],
+      "depNameTemplate": "node",
+      "datasourceTemplate": "node",
+      "versioningTemplate": "node"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "node"
+      ],
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "enabled": false
+    }
+  ]
+}

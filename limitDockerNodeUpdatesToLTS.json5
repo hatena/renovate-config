@@ -3,7 +3,7 @@
   "regexManagers": [
     {
       "fileMatch": [
-        "^*Dockerfile$"
+        "^*Dockerfile*$"
       ],
       // this regex matches the version portion within the dockerfile.
       // https://docs.renovatebot.com/modules/manager/regex/#regular-expression-capture-groups

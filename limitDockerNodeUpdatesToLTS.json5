@@ -2,8 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "regexManagers": [
     {
+      // match dockerfiles
+      // https://github.com/renovatebot/renovate/blob/ae05eae500ad26ad93b0df7b00c26b85cc3be2ce/lib/modules/manager/dockerfile/index.ts#L10
+      // https://github.com/hatena/renovate-config/blob/d7b0c790cc6300ff4f8bb455b13ff393f17ee44d/default.json#L20
       "fileMatch": [
-        "^*Dockerfile*$"
+        "(^|/|\\.)Dockerfile$",
+        "(^|/)Dockerfile[^/]*$",
+        "(^|/)Dockerfile-[^/]*$"
       ],
       // this regex matches the version portion within the dockerfile.
       // https://docs.renovatebot.com/modules/manager/regex/#regular-expression-capture-groups

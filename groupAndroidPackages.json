@@ -333,8 +333,9 @@
     {
       "groupName": "Protobuf",
       "matchPackageNames": [
+        "com.google.protobuf:protoc",
         "com.google.protobuf:protobuf-javalite",
-        "com.google.protobuf:protoc"
+        "com.google.protobuf:protobuf-kotlin-lite"
       ]
     },
     {

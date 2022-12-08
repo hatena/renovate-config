@@ -1,0 +1,36 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "regexManagers": [
+    {
+      // match dockerfiles
+      // https://github.com/renovatebot/renovate/blob/ae05eae500ad26ad93b0df7b00c26b85cc3be2ce/lib/modules/manager/dockerfile/index.ts#L10
+      // https://github.com/hatena/renovate-config/blob/d7b0c790cc6300ff4f8bb455b13ff393f17ee44d/default.json#L20
+      "fileMatch": [
+        "(^|/|\\.)Dockerfile$",
+        "(^|/)Dockerfile[^/]*$",
+        "(^|/)Dockerfile-[^/]*$"
+      ],
+      // this regex matches the version portion within the dockerfile.
+      // https://docs.renovatebot.com/modules/manager/regex/#regular-expression-capture-groups
+      // https://regex101.com/r/sDsIb4/1
+      "matchStrings": [
+        "FROM node:(?<currentValue>[0-9.]+?)[^0-9.]*\\n"
+      ],
+      "depNameTemplate": "node",
+      "datasourceTemplate": "node",
+      "versioningTemplate": "node"
+    }
+  ],
+  // since the regexManager above takes care of node versions within the dockerfile, the packageRule should be disabled as follows.
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "node"
+      ],
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "enabled": false
+    }
+  ]
+}

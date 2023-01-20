@@ -15,6 +15,11 @@
     {
       matchDatasources: ["cpan"],
       matchPackageNames: [
+        "HTTP::Config",
+        "HTTP::Headers",
+        "HTTP::Headers::Auth",
+        "HTTP::Headers::ETag",
+        "HTTP::Headers::Util",
         "HTTP::Message",
         "HTTP::Request",
         "HTTP::Request::Common",

@@ -303,7 +303,7 @@
     {
       "groupName": "Lottie",
       "matchPackagePatterns": [
-        "^com\\.airbnb\\.android:lottie-"
+        "^com\\.airbnb\\.android:lottie-?"
       ]
     },
     {

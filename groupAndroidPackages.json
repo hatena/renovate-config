@@ -301,6 +301,12 @@
       ]
     },
     {
+      "groupName": "Lottie",
+      "matchPackagePatterns": [
+        "^com\\.airbnb\\.android:lottie-?"
+      ]
+    },
+    {
       "groupName": "MockK",
       "matchPackagePatterns": [
         "^io\\.mockk:mockk"

@@ -19,6 +19,15 @@
     {
       matchDatasources: ["cpan"],
       matchPackageNames: [
+        "Email::Sender",
+        "Email::Sender::Simple",
+        "Email::Sender::Transport::SMTP",
+      ],
+      groupName: "Email-Sender",
+    },
+    {
+      matchDatasources: ["cpan"],
+      matchPackageNames: [
         "HTTP::Config",
         "HTTP::Headers",
         "HTTP::Headers::Auth",

@@ -14,6 +14,10 @@
   packageRules: [
     {
       matchDatasources: ["cpan"],
+      excludePackageNames: ["perl"],
+    },
+    {
+      matchDatasources: ["cpan"],
       matchPackageNames: [
         "HTTP::Config",
         "HTTP::Headers",

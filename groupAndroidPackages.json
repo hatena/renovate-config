@@ -163,6 +163,7 @@
       "groupName": "Apollo Android",
       "matchPackagePatterns": [
         "^com\\.apollographql\\.apollo:",
+        "^com\\.apollographql\\.apollo3$",
         "^com\\.apollographql\\.apollo3:"
       ]
     },

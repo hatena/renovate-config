@@ -7,30 +7,24 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     env:
       CI: true
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-    - uses: actions/cache@v3
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node
-    - name: Validate renovate config
-      run: |
-        for file in *.json*
-        do
-          echo "[CI] Let's validate $file"
-          RENOVATE_CONFIG_FILE=${file} npx --package renovate -c 'renovate-config-validator'
-        done
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node
+      - name: Validate renovate config
+        run: |
+          for file in *.json*
+          do
+            echo "[CI] Let's validate $file"
+            RENOVATE_CONFIG_FILE=${file} npx --package renovate -c 'renovate-config-validator'
+          done

@@ -38,6 +38,16 @@ A [shareable config preset for Renovate](https://docs.renovatebot.com/config-pre
 }
 ```
 
+### ecspressoVersion.json5 (opt-in)
+
+Updates the [ecspresso](https://github.com/kayac/ecspresso) version defined in the `.ecspresso-version` file using `regexManagers`.
+
+```json
+{
+  "extends": ["github>hatena/renovate-config:ecspressoVersion.json5"]
+}
+```
+
 ### groupAndroidPackages
 
 Grouping various libraries used for Android app development, mainly based on Maven groupId.

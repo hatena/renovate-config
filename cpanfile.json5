@@ -1,21 +1,6 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  regexManagers: [
-    {
-      fileMatch: ["(^|/)cpanfile$"],
-      matchStrings: [
-        "(requires|suggests)\\s*'(?<depName>.*?)',\\s*'(==|>=|>)?\\s*v?(?<currentValue>.*)';",
-      ],
-      datasourceTemplate: "cpan",
-      versioningTemplate: "perl",
-      extractVersionTemplate: "^v?(?<version>.*)$",
-    },
-  ],
   packageRules: [
-    {
-      matchDatasources: ["cpan"],
-      excludePackageNames: ["perl"],
-    },
     {
       matchDatasources: ["cpan"],
       matchPackageNames: [

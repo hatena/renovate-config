@@ -121,3 +121,15 @@ or overwrite the [`schedule` option](https://docs.renovatebot.com/configuration-
 ```
 
 or extend the [Schedule Presets](https://docs.renovatebot.com/presets-schedule/).
+
+### xcodegenSwiftPackages.json5 (opt-in)
+
+Updates Swift packages in XcodeGen's `project.yml` using `regexManagers`.
+
+- https://github.com/yonaskolb/XcodeGen/blob/master/Docs/ProjectSpec.md#swift-package
+
+```json
+{
+  "extends": ["github>hatena/renovate-config:xcodegenSwiftPackages.json5"]
+}
+```

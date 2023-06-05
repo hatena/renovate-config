@@ -12,6 +12,11 @@
     },
     {
       matchDatasources: ["cpan"],
+      matchPackageNames: ["Net::DNS", "Net::DNS::Nameserver"],
+      groupName: "Net-DNS",
+    },
+    {
+      matchDatasources: ["cpan"],
       matchPackageNames: [
         "HTTP::Config",
         "HTTP::Headers",

@@ -6,7 +6,7 @@
       matchStrings: [
         "url: https:\\/\\/github\\.com\\/(?<depName>.*?)(\\.git)?\\s*version: (?<currentValue>.*)\\s",
       ],
-      datasourceTemplate: "github-tags",
+      datasourceTemplate: "github-releases",
     },
   ],
 }

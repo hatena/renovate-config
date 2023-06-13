@@ -8,6 +8,7 @@
         "github: (?<depName>.*?)\\s*version: (?<currentValue>.+?)\\s",
       ],
       datasourceTemplate: "github-releases",
+      extractVersionTemplate: "^v?(?<version>.*)$",
     },
   ],
 }

@@ -2,7 +2,7 @@
   regexManagers: [
     // https://speakerdeck.com/ikesyo/renovateniyoruiosraiburarifalsezi-dong-geng-xin?slide=19
     {
-      fileMatch: ["(^|/)project.ya?ml$"],
+      fileMatch: ["(^|/)project\\.ya?ml$", "(^|/)[Xx]code[Gg]en/.+\\.ya?ml$"],
       matchStrings: [
         "url: https:\\/\\/github\\.com\\/(?<depName>.*?)(\\.git)?\\s*version: (?<currentValue>.+?)\\s",
         "github: (?<depName>.*?)\\s*version: (?<currentValue>.+?)\\s",

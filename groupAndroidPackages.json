@@ -77,6 +77,15 @@
       ]
     },
     {
+      "groupName": "androidx.hilt",
+      "matchPackagePatterns": [
+        "^androidx\\.hilt:"
+      ],
+      "prBodyNotes": [
+        "### Release Notes\n\nhttps://developer.android.com/jetpack/androidx/releases/hilt#{{{newVersion}}}"
+      ]
+    },
+    {
       "groupName": "androidx.lifecycle",
       "matchPackagePatterns": [
         "^androidx\\.lifecycle:"

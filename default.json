@@ -3,6 +3,7 @@
     "config:base",
     ":separateMultipleMajorReleases",
     ":timezone(Asia/Tokyo)",
+    "github>hatena/renovate-config:security",
     "github>hatena/renovate-config:schedule",
     "github>hatena/renovate-config:automergePin",
     "github>hatena/renovate-config:automergeTypesMinor",

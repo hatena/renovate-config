@@ -3,7 +3,6 @@
     "config:base",
     ":separateMultipleMajorReleases",
     ":timezone(Asia/Tokyo)",
-    "github>hatena/renovate-config:security",
     "github>hatena/renovate-config:schedule",
     "github>hatena/renovate-config:automergePin",
     "github>hatena/renovate-config:automergeTypesMinor",
@@ -11,7 +10,8 @@
     "github>hatena/renovate-config:groupCocoaPodsPackages",
     "github>hatena/renovate-config:groupJest",
     "github>hatena/renovate-config:groupLinters",
-    "github>hatena/renovate-config:postUpdateOptions"
+    "github>hatena/renovate-config:postUpdateOptions",
+    "github>hatena/renovate-config:vulnerabilityAlerts"
   ],
   "labels": [
     "renovate"

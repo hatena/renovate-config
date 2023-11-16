@@ -10,7 +10,8 @@
     "github>hatena/renovate-config:groupCocoaPodsPackages",
     "github>hatena/renovate-config:groupJest",
     "github>hatena/renovate-config:groupLinters",
-    "github>hatena/renovate-config:postUpdateOptions"
+    "github>hatena/renovate-config:postUpdateOptions",
+    "github>hatena/renovate-config:vulnerabilityAlerts"
   ],
   "labels": [
     "renovate"

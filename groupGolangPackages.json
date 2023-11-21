@@ -2,7 +2,7 @@
   "packageRules": [
     {
       "matchDatasources": ["go"],
-      "matchPackagePatterns": ["aws-sdk-go-v2"],
+      "matchPackagePatterns": ["^github.com/aws/aws-sdk-go-v2"],
       "groupName": "aws-sdk-go-v2"
     }
   ]

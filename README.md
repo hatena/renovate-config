@@ -1,6 +1,6 @@
 # renovate-config
 
-A [shareable config preset for Renovate](https://docs.renovatebot.com/config-presets/) used in [Hatena](https://hatenacorp.jp/).
+A [shareable config preset for Renovate](https://docs.renovatebot.com/config-presets/) used in [Hatena](https://hatena.co.jp/).
 
 ```json
 {

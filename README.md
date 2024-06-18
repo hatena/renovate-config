@@ -40,7 +40,7 @@ A [shareable config preset for Renovate](https://docs.renovatebot.com/config-pre
 
 ### ecspressoVersion.json5 (opt-in)
 
-Updates the [ecspresso](https://github.com/kayac/ecspresso) version defined in the `.ecspresso-version` file using `regexManagers`.
+Updates the [ecspresso](https://github.com/kayac/ecspresso) version defined in the `.ecspresso-version` file using `customManagers`.
 
 ```json
 {
@@ -124,7 +124,7 @@ or extend the [Schedule Presets](https://docs.renovatebot.com/presets-schedule/)
 
 ### xcodegenSwiftPackages.json5 (opt-in)
 
-Updates Swift packages in XcodeGen's `project.yml` using `regexManagers`.
+Updates Swift packages in XcodeGen's `project.yml` using `customManagers`.
 
 - https://github.com/yonaskolb/XcodeGen/blob/master/Docs/ProjectSpec.md#swift-package
 

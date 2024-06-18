@@ -1,5 +1,5 @@
 {
-  regexManagers: [
+  customManagers: [
     {
       fileMatch: ["^\\.ecspresso-version$"],
       matchStrings: ["(?<currentValue>\\d+\\.\\d+\\.\\d+)"],

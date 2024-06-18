@@ -1,5 +1,5 @@
 {
-  regexManagers: [
+  customManagers: [
     // https://speakerdeck.com/ikesyo/renovateniyoruiosraiburarifalsezi-dong-geng-xin?slide=19
     {
       fileMatch: ["(^|/)project\\.ya?ml$", "(^|/)[Xx]code[Gg]en/.+\\.ya?ml$"],

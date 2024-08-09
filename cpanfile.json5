@@ -43,13 +43,15 @@
     },
     {
       matchDatasources: ["cpan"],
-      matchPackageNames: ["Test::More", "Test2", "Test2::API"],
+      matchPackageNames: [
+        "Test::More",
+        "Test2",
+        "Test2::API",
+        "Test2::Plugin::UTF8",
+        "Test2::Suite",
+        "Test2::V0",
+      ],
       groupName: "Test-Simple",
-    },
-    {
-      matchDatasources: ["cpan"],
-      matchPackageNames: ["Test2::Plugin::UTF8", "Test2::Suite", "Test2::V0"],
-      groupName: "Test2-Suite",
     },
     {
       matchDatasources: ["cpan"],

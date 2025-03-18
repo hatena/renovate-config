@@ -1,0 +1,9 @@
+{
+  "packageRules": [
+    {
+      "matchDepTypes": ["action"],
+      "excludePackagePrefixes": ["actions/"],
+      "pinDigests": true
+    }
+  ]
+}

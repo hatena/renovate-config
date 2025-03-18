@@ -12,15 +12,12 @@
     "github>hatena/renovate-config:groupJest",
     "github>hatena/renovate-config:groupLinters",
     "github>hatena/renovate-config:postUpdateOptions",
-    "github>hatena/renovate-config:vulnerabilityAlerts"
+    "github>hatena/renovate-config:vulnerabilityAlerts",
+    "github>hatena/renovate-config:pinGitHubActionDigests"
   ],
-  "labels": [
-    "renovate"
-  ],
+  "labels": ["renovate"],
   "dockerfile": {
-    "fileMatch": [
-      "(^|/)Dockerfile-[^/]*$"
-    ]
+    "fileMatch": ["(^|/)Dockerfile-[^/]*$"]
   },
   "npm": {
     "rangeStrategy": "bump"
@@ -28,10 +25,7 @@
   "packageRules": [
     {
       "groupName": "boto3",
-      "matchPackageNames": [
-        "boto3",
-        "botocore"
-      ]
+      "matchPackageNames": ["boto3", "botocore"]
     }
   ]
 }

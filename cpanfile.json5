@@ -3,6 +3,11 @@
   packageRules: [
     {
       matchDatasources: ["cpan"],
+      matchPackageNames: ["Crypt::Digest::SHA512", "Crypt::PK::ECC"],
+      groupName: "CryptX",
+    },
+    {
+      matchDatasources: ["cpan"],
       matchPackageNames: [
         "Email::Sender",
         "Email::Sender::Simple",

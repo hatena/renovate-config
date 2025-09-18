@@ -1,3 +1,10 @@
 {
-  "minimumReleaseAge": "7 days"
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "minimumReleaseAge": "7 days"
+    }
+  ]
 }

@@ -13,7 +13,8 @@
     "github>hatena/renovate-config:groupLinters",
     "github>hatena/renovate-config:postUpdateOptions",
     "github>hatena/renovate-config:vulnerabilityAlerts",
-    "github>hatena/renovate-config:pinGitHubActionDigests"
+    "github>hatena/renovate-config:pinGitHubActionDigests",
+    "github>hatena/renovate-config:minimumReleaseAge"
   ],
   "labels": ["renovate"],
   "dockerfile": {

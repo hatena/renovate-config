@@ -2,7 +2,7 @@
   "packageRules": [
     {
       "matchDepTypes": ["action"],
-      "excludePackagePrefixes": ["actions/"],
+      "matchPackageNames": ["!actions/{/,}**"],
       "pinDigests": true
     }
   ]

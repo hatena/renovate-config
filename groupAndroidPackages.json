@@ -189,6 +189,12 @@
       ]
     },
     {
+      "matchPackagePatterns": [
+        "^com\\.android\\.billingclient:"
+      ],
+      "changelogUrl": "https://developer.android.com/google/play/billing/release-notes"
+    },
+    {
       "groupName": "Coil",
       "matchPackagePatterns": [
         "^io\\.coil-kt:"

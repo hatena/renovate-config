@@ -1,7 +1,7 @@
 {
   "packageRules": [
     {
-      "matchDepTypes": [
+      "matchDatasources": [
         "docker"
       ],
       "matchPackageNames": [

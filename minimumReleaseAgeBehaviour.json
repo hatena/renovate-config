@@ -1,0 +1,13 @@
+{
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "ghcr.io/**"
+      ],
+      "minimumReleaseAgeBehaviour": "timestamp-optional"
+    }
+  ]
+}

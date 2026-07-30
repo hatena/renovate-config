@@ -1,0 +1,5 @@
+# Fixture used to dry-run the Dockerfile-* fileMatch in default.json locally (see scripts/renovate-local.sh).
+FROM node:18.19.0-alpine
+
+WORKDIR /app
+CMD ["node", "app.js"]

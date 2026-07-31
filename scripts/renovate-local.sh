@@ -50,6 +50,7 @@ SUITE=(
   "groupLinters.json:npm"
   "automergeTypesMinor.json:npm"
   "limitDockerNodeUpdatesToLTS.json5:docker"
+  "minimumReleaseAgeBehaviour.json:docker"
   "pinGitHubActionDigests.json:github-actions"
   "default.json:npm"
   "default.json:docker"
@@ -104,7 +105,13 @@ require_fixture_dir() {
 # Dry-run a preset file from the working copy directly.
 run_one() {
   local config_file="$1" fixture="$2"
-  require_fixture_dir "$fixture"
+  # `set -e` is suspended for the whole function body when it's called as
+  # part of a tested command (e.g. `if ! run_one ...`, as suite mode does
+  # below), so a `return 1` from require_fixture_dir would otherwise be
+  # ignored and execution would fall through to `docker run` regardless.
+  if ! require_fixture_dir "$fixture"; then
+    return 1
+  fi
 
   local token
   token="$(resolve_github_token)"
@@ -126,7 +133,10 @@ run_one() {
 # Dry-run a preset resolved via github>hatena/renovate-config:PRESET#BRANCH.
 run_branch() {
   local preset="$1" branch="$2" fixture="$3"
-  require_fixture_dir "$fixture"
+  # See the comment in run_one(): don't rely on `set -e` to act on this.
+  if ! require_fixture_dir "$fixture"; then
+    return 1
+  fi
 
   # The temp config is written *inside* the repo checkout (rather than under
   # $TMPDIR) so it lands inside the single bind mount below. Docker Desktop /
@@ -137,13 +147,18 @@ run_branch() {
   local tmp_dir="$REPO_ROOT/tmp"
   mkdir -p "$tmp_dir"
   local tmp_config="$tmp_dir/renovate-local-branch-config.json"
-  trap 'rm -f "$tmp_config"' RETURN
   printf '{"extends": ["github>hatena/renovate-config:%s#%s"]}\n' "$preset" "$branch" > "$tmp_config"
 
   local token
   token="$(resolve_github_token)"
 
   echo "[renovate-local] preset=$preset#$branch fixture=$fixture dry-run=$DRY_RUN"
+  # Capture docker's exit status manually (rather than a RETURN trap) so the
+  # temp config is cleaned up even when this function is called outside a
+  # tested context (`run_branch ...; exit $?`), where a non-zero exit from
+  # `docker run` would otherwise trigger `set -e` and skip any cleanup that
+  # follows it.
+  local status=0
   docker run --rm \
     -e RENOVATE_CONFIG_FILE=/usr/src/app/tmp/renovate-local-branch-config.json \
     -e RENOVATE_REQUIRE_CONFIG=ignored \
@@ -154,7 +169,9 @@ run_branch() {
     -v renovate-config-local-cache:/tmp/renovate \
     -w "/usr/src/app/test/fixtures/$fixture" \
     "$RENOVATE_IMAGE" \
-    renovate --platform=local --dry-run="$DRY_RUN"
+    renovate --platform=local --dry-run="$DRY_RUN" || status=$?
+  rm -f "$tmp_config"
+  return "$status"
 }
 
 if [[ -n "$PRESET" || -n "$BRANCH" ]]; then

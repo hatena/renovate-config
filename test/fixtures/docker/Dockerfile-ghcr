@@ -1,0 +1,4 @@
+# Fixture used to dry-run minimumReleaseAgeBehaviour.json locally (see scripts/renovate-local.sh).
+FROM ghcr.io/renovatebot/renovate:41.43.5
+
+CMD ["renovate"]

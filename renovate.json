@@ -2,5 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>hatena/renovate-config"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Keep the Renovate image used by scripts/renovate-local.sh and scripts/validate-config.sh up to date",
+      "fileMatch": ["^scripts/renovate-image\\.env$"],
+      "matchStrings": ["RENOVATE_IMAGE=(?<depName>[^:]+):(?<currentValue>\\S+)"],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    }
   ]
 }

@@ -14,17 +14,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
-        with:
-          node-version: 24.x
-      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node
       - name: Validate renovate config
-        run: |
-          for file in *.json*
-          do
-            echo "[CI] Let's validate $file"
-            RENOVATE_CONFIG_FILE=${file} npx --package renovate -c 'renovate-config-validator'
-          done
+        run: ./scripts/validate-config.sh
+
+  dry-run:
+    runs-on: ubuntu-latest
+
+    env:
+      CI: true
+      GITHUB_COM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
+      - name: Dry-run presets against fixtures
+        run: ./scripts/renovate-local.sh

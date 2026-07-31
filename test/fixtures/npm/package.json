@@ -1,0 +1,15 @@
+{
+  "name": "renovate-config-fixture-npm",
+  "private": true,
+  "description": "Fixture used to dry-run npm-related presets locally (see scripts/renovate-local.sh). Not a real package.",
+  "devDependencies": {
+    "eslint": "8.10.0",
+    "prettier": "2.5.1",
+    "@typescript-eslint/eslint-plugin": "5.10.0",
+    "@typescript-eslint/parser": "5.10.0",
+    "jest": "27.5.1",
+    "ts-jest": "27.1.3",
+    "@types/jest": "27.4.0",
+    "@types/node": "16.11.26"
+  }
+}
